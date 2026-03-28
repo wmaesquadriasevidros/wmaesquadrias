@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- SEO Básico -->
+    <title>
+      Vidraçaria e Serralheria de Alumínio em Belo Horizonte | PORTA EM ACM|
+      Esquadrias e Vidros
+    </title>
+
+    <meta
+      name="description"
+      content="Vidraçaria em Belo Horizonte especializada em esquadrias de alumínio, vidro temperado e fachadas. Aproveite 10% de desconto à vista. Orçamento rápido via WhatsApp."
+    />
+
+    <meta
+      name="keywords"
+      content="vidraçaria em Bh, vidraçaria perto de mim, esquadrias de aluminio perto de mim, esquadrias de alumínio BH, Porta em ACM, Porta de ACM, Porta ACM BH, esquadrias de vidro, portas de alumínio, janelas de alumínio, vidraçaria BH, esquadrias sob medida, WMA Esquadrias"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Vidraçaria BH" />
+
+    <!-- SEO Local -->
+    <meta name="geo.region" content="BR-MG" />
+    <meta name="geo.placename" content="Belo Horizonte" />
+
+    <!-- Open Graph (Facebook / WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Vidraçaria e Serralheria de Alumínio em BH com 10% de Desconto à Vista"
+    />
+    <meta
+      property="og:description"
+      content="Esquadrias de alumínio, Porta em ACM, vidro temperado e fachadas sob medida em Belo Horizonte. Orçamento rápido pelo WhatsApp."
+    />
+    <meta
+      property="og:image"
+      content="https://wmaesquadriasevidros.com.br/oferta-esquadrias-vidros"
+    />
+    <meta
+      property="og:url"
+      content="https://wmaesquadriasevidros.com.br/oferta-esquadrias-vidros"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vidraçaria em BH | 10% OFF à Vista" />
+    <meta
+      name="twitter:description"
+      content="Vidros e esquadrias sob medida com desconto especial. Solicite orçamento."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wmaesquadriasevidros.com.br/oferta-esquadrias-vidros"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="oferta.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo-background-black.png"
+      type="image/x-icon"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2S5S8CWBY1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2S5S8CWBY1");
+    </script>
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <script>
+      // Helper function to delay opening a URL until a gtag event is sent.
+      // Call it in response to an action that should navigate to a URL.
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === "string") {
+            window.location = url;
+          }
+        };
+        gtag("event", "manual_event_CONTACT", {
+          event_callback: callback,
+          event_timeout: 2000,
+          // <event_parameters>
+        });
+        return false;
+      }
+    </script>
+  </head>
+  <main></main>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/icons/logo.png" alt="WMA Esquadrias e Vidros" />
+        </a>
+
+        <nav class="nav-desktop">
+          <a href="./index.html">Página Inicial</a>
+          <a href="#oferta" class="btn-oferta"><span>Oferta Limitada</span></a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="menu-overlay"></div>
+
+    <!-- MENU LATERAL -->
+    <aside class="menu-mobile">
+      <nav>
+        <a href="./index.html">Página Inicial</a>
+        <a href="#oferta" class="btn-oferta">Solicitar Orçamento</a>
+      </nav>
+    </aside>
+
+    <section class="hero" id="inicio">
+      <div class="hero-container">
+        <!-- TEXTO -->
+        <div class="hero-content">
+          <h1>SOLICITE JÁ SUA PORTA ACM DO TAMANHO DOS SEUS SONHOS</h1>
+
+          <h2>GRANDES OBRAS MERECEM GRANDES PORTAS</h2>
+
+          <ul class="hero-benefits">
+            <li>✔ Portas ACM Sob Medida</li>
+            <li>✔ Acabamento de Alto Padrão</li>
+            <li>✔ Valoiza o seu imóvel</li>
+            <li>✔ Portas ACM para pequenas e grandes obras</li>
+          </ul>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="hero-form">
+          <h3>Solicite um orçamento rápido</h3>
+
+          <form id="form-whatsapp-hero">
+            <input type="text" name="nome" placeholder="Seu nome" required />
+
+            <input
+              type="text"
+              name="endereco"
+              placeholder="Endereço da obra (bairro / cidade)"
+              required
+            />
+
+            <textarea
+              name="mensagem"
+              rows="3"
+              placeholder="Descreva brevemente o que você precisa (ex: portas, janelas, fachada, vidro, etc.)"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-oferta" onclick="gtagSendEvent()">
+              <span>Solicitar Orçamento no WhatsApp</span>
+            </button>
+          </form>
+
+          <p class="form-info">Resposta rápida • Sem compromisso</p>
+        </div>
+        <ul class="hero-benefits">
+          <li>✔ Atendimento em BH e região metropolitana</li>
+        </ul>
+      </div>
+    </section>
+    <div class="gallery">
+      <div class="gallery-container">
+        <header class="gallery-header">
+          <h2>Obras Realizadas com Portas em ACM</h2>
+          <p>
+            Confira alguns projetos executados pela WMA Esquadrias e Vidros em
+            Belo Horizonte e região. Qualidade, precisão e acabamento de alto
+            padrão.
+          </p>
+        </header>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/obra-1.webp"
+              alt="Fachada em vidro e esquadrias de alumínio em obra residencial de alto padrão em BH"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/obra-2.webp"
+              alt="Portas e janelas de alumínio sob medida em residência moderna"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/obra-3.webp"
+              alt="Vidro temperado aplicado em área externa residencial"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/obra-4.webp"
+              alt="Esquadrias de alumínio em projeto comercial em Belo Horizonte"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-1.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-3.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-4.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-5.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-6.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-7.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-8.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-9.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-10.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-11.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-12.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-13.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-14.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-15.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-16.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-17.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-18.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-19.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-20.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-21.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-22.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-23.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-24.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-25.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-26.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-27.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/porta-acm-28.webp"
+              alt="Detalhe de esquadria de alumínio com acabamento premium"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+
+        <div class="gallery-cta">
+          <a
+            href="https://wa.me/5531982112125?text=Olá%21%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20esquadrias%20de%20alumínio%20e%20vidros.%20Vim%20pelo%20site%20da%20WMA%20Esquadrias%20e%20Vidros."
+            target="_blank"
+            class="btn-oferta"
+            onclick="
+              gtag('event', 'click_whatsapp', {
+                event_category: 'Contato',
+                event_label: 'WhatsApp - gallery',
+              })
+            "
+          >
+            <span>Solicitar Orçamento no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- COLUNA 1 -->
+        <div class="footer-col">
+          <img
+            src="./assets/icons/logo.png"
+            alt="WMA Esquadrias e Vidros - Esquadrias de Alumínio em Belo Horizonte"
+            class="footer-logo"
+          />
+
+          <p>
+            Desde <strong>2008</strong>, a
+            <strong>WMA Esquadrias e Vidros</strong> oferece soluções completas
+            em <strong>esquadrias de alumínio</strong>,
+            <strong>vidros temperados e laminados</strong>, com atendimento em
+            <strong>Belo Horizonte e região</strong>.
+          </p>
+        </div>
+
+        <!-- COLUNA 2 -->
+        <div class="footer-col">
+          <h3>Serviços</h3>
+          <ul>
+            <li>Esquadrias de Alumínio</li>
+            <li>Portas e Janelas</li>
+            <li>Vidro Temperado</li>
+            <li>Vidro Laminado</li>
+            <li>Fachadas em Vidro</li>
+          </ul>
+        </div>
+
+        <!-- COLUNA 3 -->
+        <div class="footer-col">
+          <h3>Área de Atendimento</h3>
+          <ul>
+            <li>Belo Horizonte</li>
+            <li>Contagem</li>
+            <li>Betim</li>
+            <li>Nova Lima</li>
+            <li>Região Metropolitana</li>
+          </ul>
+        </div>
+
+        <!-- COLUNA 4 -->
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <p>Belo Horizonte – MG<br /></p>
+
+          <div class="footer-social">
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/wmaesquadriasevidros"
+              target="_blank"
+              aria-label="Instagram"
+              class="social-link"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.51 4.51 0 0 0 12 7.5zm0 7.4A2.9 2.9 0 1 1 14.9 12 2.9 2.9 0 0 1 12 14.9zM17.8 6.2a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"
+                />
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/5531982112125"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="social-link"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-5.5c-.2-.1-1.2-.6-1.4-.6s-.3-.1-.4.1-.5.6-.6.7-.2.1-.4 0a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.3.1-.4l.3-.3.2-.3c.1-.1.1-.2.2-.3s0-.2 0-.3-.4-1.1-.6-1.5c-.2-.4-.3-.4-.4-.4h-.3c-.1 0-.3.1-.4.2s-.6.6-.6 1.4.6 1.6.7 1.7a9.4 9.4 0 0 0 3.6 3.2c.5.2.9.4 1.2.5a3 3 0 0 0 1.4.1c.4-.1 1.2-.5 1.4-.9s.2-.8.1-.9-.2-.1-.4-.2z"
+                />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/profile.php?id=61558133347854"
+              target="_blank"
+              aria-label="Facebook"
+              class="social-link"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V11h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="ano"></span> WMA Esquadrias e Vidros. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" alt="" />
+    </div>
+    <a
+      class="btn-whatsapp"
+      onclick="return gtag_report_conversion();"
+      href="https://wa.me/5531982112125?text=Olá%21%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20esquadrias%20de%20alumínio%20e%20vidros.%20Vim%20pelo%20site%20da%20WMA%20Esquadrias%20e%20Vidros."
+      target="_blank"
+      onclick="
+        gtag('event', 'whatsapp_click', {
+          event_category: 'contato',
+          event_label: 'whatsapp_flutuante',
+        })
+      "
+    >
+      <img src="./assets/icons/whatssapp-2.svg" alt="Botão whatsapp" />
+      <span class="tooltip-text">Agende seu orçamento.</span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
